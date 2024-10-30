@@ -1,0 +1,68 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: nginx
+spec:
+  replicas: {{ .Values.nginx.replicaCount }}
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: "{{ .Values.nginx.image }}"
+        ports:
+        - containerPort: {{ .Values.nginx.ports.http }}
+        - containerPort: {{ .Values.nginx.ports.https }}
+        volumeMounts:
+        - name: ssl-certs
+          mountPath: /etc/ssl/sslcerts
+        - name: nginx-config
+          mountPath: /etc/nginx/conf.d/default.conf
+          subPath: default.conf
+        - name: control-panel-dist
+          mountPath: /web/trussed/dist
+          readOnly: true
+      volumes:
+      - name: ssl-certs
+        secret:
+          secretName: {{ .Values.tlsSecretName }}
+          items:
+            - key: tls.crt
+              path: nginx.crt
+            - key: tls.key
+              path: nginx.key
+      - name: nginx-config
+        configMap:
+          name: nginx-config
+      - name: control-panel-dist
+        hostPath:
+          path: /mnt/control_panel_dist
+          type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    service.beta.kubernetes.io/azure-load-balancer-resource-group: "trussedai-aks"
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 57.152.78.122
+  selector:
+    app: nginx
+  ports:
+  - name: http
+    port: 80
+    targetPort: {{ .Values.nginx.ports.http }}
+  - name: https
+    port: 443
+    targetPort: {{ .Values.nginx.ports.https }}

@@ -1,0 +1,26 @@
+Namespace: trussedai
+
+tlsSecretName: ssl-cert-secret
+
+imagePullSecretName: acr-secret
+
+app:
+  domain: "dev.trussed.ai"
+  smtpFrom: "alerts@trussed.ai"
+  smtpHost: "mail.trussedproject.co"
+  smtpPort: "587"
+
+aggregator:
+  image: "trussedai.azurecr.io/trussedai/trussed_ai_dp:latest"
+
+controlPlane:
+  image: "trussedai.azurecr.io/trussedai/trussed_ai_cp:latest"
+
+nginx:
+  image: nginx:latest
+  replicaCount: 1
+  ports:
+    http: "80"
+    https: "443"
+  volumes:
+    control_panel_dist: /web/trussed/dist

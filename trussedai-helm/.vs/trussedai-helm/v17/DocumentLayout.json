@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\ingress.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\ingress.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\values.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:values.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\pvc.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\pvc.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\configmap.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\configmap.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\deployment-nginx.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\deployment-nginx.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\deployment-controlplane.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\deployment-controlplane.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\deployment-aggregator.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\deployment-aggregator.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\mongo-deployment.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\mongo-deployment.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\mongo-express-deployment.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\mongo-express-deployment.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\Chart.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chart.yaml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\generate-ssl-store.sh||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:generate-ssl-store.sh||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\generate-ssl-store (2).sh||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\generate-ssl-store (2).sh||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "deployment-nginx.yaml",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\deployment-nginx.yaml",
+              "RelativeDocumentMoniker": "templates\\deployment-nginx.yaml",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\deployment-nginx.yaml",
+              "RelativeToolTip": "templates\\deployment-nginx.yaml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABYAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-10-19T05:10:51.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "configmap.yaml",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\configmap.yaml",
+              "RelativeDocumentMoniker": "templates\\configmap.yaml",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\configmap.yaml",
+              "RelativeToolTip": "templates\\configmap.yaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-10-19T05:10:25.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "values.yaml",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\values.yaml",
+              "RelativeDocumentMoniker": "values.yaml",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\values.yaml",
+              "RelativeToolTip": "values.yaml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAYwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-10-19T05:03:12.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ingress.yaml",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\ingress.yaml",
+              "RelativeDocumentMoniker": "templates\\ingress.yaml",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\ingress.yaml",
+              "RelativeToolTip": "templates\\ingress.yaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-10-19T06:59:24.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "deployment-controlplane.yaml",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\deployment-controlplane.yaml",
+              "RelativeDocumentMoniker": "templates\\deployment-controlplane.yaml",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\deployment-controlplane.yaml",
+              "RelativeToolTip": "templates\\deployment-controlplane.yaml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-10-19T05:09:31.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pvc.yaml",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\pvc.yaml",
+              "RelativeDocumentMoniker": "templates\\pvc.yaml",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\pvc.yaml",
+              "RelativeToolTip": "templates\\pvc.yaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-10-20T01:06:54.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "deployment-aggregator.yaml",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\deployment-aggregator.yaml",
+              "RelativeDocumentMoniker": "templates\\deployment-aggregator.yaml",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\deployment-aggregator.yaml",
+              "RelativeToolTip": "templates\\deployment-aggregator.yaml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-10-19T05:03:25.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "mongo-deployment.yaml",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\mongo-deployment.yaml",
+              "RelativeDocumentMoniker": "templates\\mongo-deployment.yaml",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\mongo-deployment.yaml",
+              "RelativeToolTip": "templates\\mongo-deployment.yaml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-10-20T01:05:07.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "mongo-express-deployment.yaml",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\mongo-express-deployment.yaml",
+              "RelativeDocumentMoniker": "templates\\mongo-express-deployment.yaml",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\mongo-express-deployment.yaml",
+              "RelativeToolTip": "templates\\mongo-express-deployment.yaml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-10-20T01:05:28.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Chart.yaml",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\Chart.yaml",
+              "RelativeDocumentMoniker": "Chart.yaml",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\Chart.yaml",
+              "RelativeToolTip": "Chart.yaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-10-19T05:03:19.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "generate-ssl-store.sh",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\generate-ssl-store.sh",
+              "RelativeDocumentMoniker": "generate-ssl-store.sh",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\generate-ssl-store.sh",
+              "RelativeToolTip": "generate-ssl-store.sh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-19T06:58:09.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "generate-ssl-store (2).sh",
+              "DocumentMoniker": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\generate-ssl-store (2).sh",
+              "RelativeDocumentMoniker": "templates\\generate-ssl-store (2).sh",
+              "ToolTip": "C:\\Users\\Checkout\\Desktop\\trussedai-azure\\trussedai-helm\\templates\\generate-ssl-store (2).sh",
+              "RelativeToolTip": "templates\\generate-ssl-store (2).sh",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAACeAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-19T06:51:35.145Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

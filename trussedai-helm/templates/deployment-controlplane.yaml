@@ -1,0 +1,82 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: control-plane
+  namespace: {{ .Values.Namespace }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: control-plane
+  template:
+    metadata:
+      labels:
+        app: control-plane
+    spec:
+      containers:
+      - name: control-plane
+        image: "{{ .Values.controlPlane.image }}"
+        ports:
+        - containerPort: 8000
+        env:
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: app-secrets
+              key: jwtSecret
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: app-secrets
+              key: databaseUrl
+        - name: DATABASE_NAME
+          valueFrom:
+            secretKeyRef:
+              name: app-secrets
+              key: databaseName
+        - name: ENVIRONMENT
+          value: "docker"
+        - name: ROOT_USER_EMAIL
+          valueFrom:
+            secretKeyRef:
+              name: app-secrets
+              key: rootUserEmail
+        - name: ROOT_USER_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: app-secrets
+              key: rootUserPassword
+        volumeMounts:
+        - name: control-panel-dist
+          mountPath: /app/control_panel/api/static/
+        - name: logs-volume
+          mountPath: /app/output.log
+          subPath: control-plane-access.log
+        - name: logs-volume
+          mountPath: /app/error.log
+          subPath: control-plane-error.log
+      volumes:
+      - name: logs-volume
+        hostPath:
+          path: /mnt/logs
+          type: DirectoryOrCreate
+      - name: control-panel-dist
+        hostPath:
+          path: /mnt/control_panel_dist
+          type: DirectoryOrCreate
+      imagePullSecrets:
+      - name: {{ .Values.imagePullSecretName }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: control-plane-service
+  namespace: {{ .Values.Namespace }}
+spec:
+  selector:
+    app: control-plane
+  ports:
+  - protocol: TCP
+    port: 8000
+    targetPort: 8000
+  type: ClusterIP

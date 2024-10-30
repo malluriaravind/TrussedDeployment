@@ -1,0 +1,64 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aggregator
+  namespace: {{ .Values.Namespace }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aggregator
+  template:
+    metadata:
+      labels:
+        app: aggregator
+    spec:
+      containers:
+      - name: aggregator
+        image: "{{ .Values.aggregator.image }}"
+        ports:
+        - containerPort: 7007
+        env:
+        - name: DOMAIN
+          valueFrom:
+            secretKeyRef:
+              name: app-secrets
+              key: domain
+        - name: MONGODB_URL
+          valueFrom:
+            secretKeyRef:
+              name: app-secrets
+              key: databaseUrl
+        - name: MONGODB_NAME
+          valueFrom:
+            secretKeyRef:
+              name: app-secrets
+              key: databaseName
+        volumeMounts:
+        - name: logs-volume
+          mountPath: /app/output.log
+          subPath: aggregator-access.log
+        - name: logs-volume
+          mountPath: /app/error.log
+          subPath: aggregator-error.log
+      volumes:
+      - name: logs-volume
+        hostPath:
+          path: /mnt/logs
+          type: DirectoryOrCreate
+      imagePullSecrets:
+      - name: {{ .Values.imagePullSecretName }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aggregator-service
+  namespace: {{ .Values.Namespace }}
+spec:
+  selector:
+    app: aggregator
+  ports:
+  - protocol: TCP
+    port: 7007
+    targetPort: 7007
+  type: ClusterIP
